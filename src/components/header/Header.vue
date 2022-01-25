@@ -1,27 +1,30 @@
 <template>
-  <div class="grid container">
+  <div class="container">
     <div class="containerFlex select">
-      <img
-        src="../assets/VisualStudioCode_icon.svg.png"
-        alt="visualStudioCodeIcon"
-        class="visualStudioCodeIcon"
-      />
-      <a>File</a>
-      <a>Edit</a>
-      <a>Selection</a>
-      <a>View</a>
-      <a>Go</a>
-      <a>Run</a>
-      <a>Terminal</a>
-      <a>Help</a>
+      <div>
+        <img
+          src="../../assets/VisualStudioCode_icon.svg.png"
+          alt="visualStudioCodeIcon"
+          class="visualStudioCodeIcon"
+        />
+        <a href="#">File</a>
+        <a href="#">Edit</a>
+        <a href="#">Selection</a>
+        <a href="#">View</a>
+        <a href="#">Go</a>
+        <a href="#">Run</a>
+        <a href="#">Terminal</a>
+        <a href="#">Help</a>
+      </div>
     </div>
+
     <div class="containerFlex visual">
-      <a href="">lorem lorem lorem</a>
+      <a href="" id="info-profile">this is my profile :)</a>
     </div>
     <div class="containerFlex options-header">
-      <a>icon</a>
-      <a>File</a>
-      <a>Edit</a>
+      <img src="../../assets/negativeIcon.png" alt="" class="icon" />
+      <img src="../../assets/422371.svg" alt="" class="icon" />
+      <img src="../../assets/img_333885.png" alt="" class="icon" />
     </div>
   </div>
 </template>
@@ -31,35 +34,56 @@ export default {
   name: "Header",
 };
 </script>
-<style>
+<style scoped>
+a {
+  color: #f8f8f2;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  filter: contrast(100%);
+}
 .visualStudioCodeIcon {
   width: 20px;
   height: 20px;
+  margin-left: 5px;
 }
-.grid {
-  width: 100%;
+.container {
   height: 4vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-wrap: nowrap;
   background: #282a36;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 .containerFlex {
   display: flex;
   align-items: center;
 }
 .select {
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  width: 30%;
+  margin-right: auto;
+}
+.select > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .visual {
+  width: 300px;
+  justify-content: center;
   flex-wrap: nowrap;
-  text-align: center;
 }
 
 .options-header {
-  width: auto;
-  height: auto;
+  margin-left: auto;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
 li {
   list-style-type: none;
   /* - &BG       '#282A36'
@@ -82,26 +106,18 @@ li {
     - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
     - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )*/
 }
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .grid {
-   grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .select {
+    width: auto;
   }
   .visual {
     display: none;
-  }
-   .options-header a { 
-    margin-left: auto;
   }
   .options-header {
     margin-left: auto;
