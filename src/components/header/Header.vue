@@ -21,6 +21,7 @@
     <div class="containerFlex visual">
       <a href="" id="info-profile">this is my profile :)</a>
     </div>
+
     <div class="containerFlex options-header">
       <img src="../../assets/negativeIcon.png" alt="" class="icon" />
       <img src="../../assets/422371.svg" alt="" class="icon" />
@@ -49,31 +50,31 @@ a {
   margin-left: 5px;
 }
 .container {
-  height: 4vh;
+  height: 30px;
+  padding: 5px;
   display: flex;
-  flex: 1;
   align-items: center;
   flex-wrap: nowrap;
-  background: #282a36;
+  background: #191a21;
 }
 .containerFlex {
   display: flex;
   align-items: center;
 }
 .select {
-  width: 30%;
+  min-width: 500px;
+  max-width: 600px;
   margin-right: auto;
 }
 .select > div {
   flex: 1;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
 }
 .visual {
-  width: 300px;
-  justify-content: center;
-  flex-wrap: nowrap;
+  display: inline;
 }
 
 .options-header {
@@ -109,12 +110,18 @@ li {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  .select {
+    min-width: auto;
+  }
+  .select > div {
+    min-width: auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   .select {
-    width: auto;
+    min-width: 310px;
   }
   .visual {
     display: none;

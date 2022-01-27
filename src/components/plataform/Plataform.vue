@@ -1,9 +1,6 @@
 <template>
   <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sint
-    debitis. Explicabo pariatur dolores dolore, aperiam dicta distinctio,
-    exercitationem, autem maxime laboriosam quis unde. Architecto numquam autem
-    blanditiis consequatur magnam.
+    Lorem 
   </div>
 </template>
 
