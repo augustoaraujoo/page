@@ -6,7 +6,7 @@
           ><img src="@/assets/icons/documento.png" alt="documentoIconPNG"
         /></a>
       </div>
-      <div>
+      <div @click="search" class="searchIconContainer">
         <a href="#"
           ><img src="@/assets/icons/search.png" alt="searchIconPNG"
         /></a>
@@ -39,16 +39,32 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      inputSearch:''
+    }
+  },
+  computed: {
+    
+  },
+};
 </script>
 
 <style scoped>
+.searchIconContainer img {
+  transform: scaleX(-1);
+}
 img {
   width: 30px;
   height: 30px;
+  filter: contrast(50%);
+}
+img:hover {
+  filter: contrast(5%);
 }
 .aside-container {
-  background: #282a36;
+  background: #191a21;
   min-width: 60px;
   max-width: 60px;
   display: flex;
@@ -61,13 +77,13 @@ img {
   height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .config-user {
   height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 10px;
 }
 </style>

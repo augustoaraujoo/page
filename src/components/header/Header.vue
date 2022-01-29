@@ -42,7 +42,7 @@ a {
 .icon {
   width: 15px;
   height: 15px;
-  filter: contrast(100%);
+  filter: contrast(5%);
 }
 .visualStudioCodeIcon {
   width: 20px;
