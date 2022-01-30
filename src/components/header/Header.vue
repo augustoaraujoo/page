@@ -3,7 +3,7 @@
     <div class="containerFlex select">
       <div>
         <img
-          src="../../assets/VisualStudioCode_icon.svg.png"
+          src="../../assets/icons/VisualStudioCode_icon.svg.png"
           alt="visualStudioCodeIcon"
           class="visualStudioCodeIcon"
         />
@@ -23,9 +23,9 @@
     </div>
 
     <div class="containerFlex options-header">
-      <img src="../../assets/negativeIcon.png" alt="" class="icon" />
-      <img src="../../assets/422371.svg" alt="" class="icon" />
-      <img src="../../assets/img_333885.png" alt="" class="icon" />
+      <img src="../../assets/icons/negativeIcon.png" alt="" class="icon" />
+      <img src="../../assets/icons/422371.svg" alt="" class="icon" />
+      <img src="../../assets/icons/img_333885.png" alt="" class="icon" />
     </div>
   </div>
 </template>
@@ -37,6 +37,7 @@ export default {
 </script>
 <style scoped>
 a {
+  filter: contrast(100%);
   color: #f8f8f2;
 }
 .icon {
@@ -72,6 +73,10 @@ a {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
+}
+.select a:hover {
+  filter: contrast(10%);
+  transition: 0.3s;
 }
 .visual {
   display: inline;

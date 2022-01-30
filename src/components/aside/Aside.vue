@@ -42,12 +42,10 @@
 export default {
   data() {
     return {
-      inputSearch:''
-    }
+      inputSearch: "",
+    };
   },
-  computed: {
-    
-  },
+  computed: {},
 };
 </script>
 
@@ -62,6 +60,7 @@ img {
 }
 img:hover {
   filter: contrast(5%);
+  transition: 0.3s;
 }
 .aside-container {
   background: #191a21;

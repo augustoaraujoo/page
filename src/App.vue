@@ -4,8 +4,7 @@
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
 };
 </script>
 <style>
@@ -17,6 +16,7 @@ export default {
 }
 
 body {
+  user-select: none;
   width: 100%;
   height: 100vh;
 }
